@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #1f1f1f;
+}
+
+.container {
+  display: flex;
+  background-image: url("/img/rainyclouds.jpg");
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  width: 1000px;
+  height: 600px;
+}
+
+.left-container {
+  width: 70%;
+  height: 100%;
+}
+
+.right-container {
+  width: 30%;
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.wrapper {
+  width: 100%;
+  background: transparent;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .input-data {
+  flex-grow: 1;
+  height: 40px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.wrapper .input-data input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 15px;
+  border-bottom: 2px solid silver;
+  background: transparent;
+  color: white;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.wrapper .input-data input:focus {
+  border-bottom: 2px solid white;
+  transition: border-bottom-color 0.8s ease;
+}
+
+.upper {
+  height: 40%;
+}
+
+.app-name {
+  color: white;
+  font-weight: 600;
+  text-align: left;
+  font-size: 14px;
+  padding-left: 110px;
+  padding-top: 50px;
+}
+
+.forecast-container {
+  height: 30%;
+}
+
+.lower {
+  height: 20%;
+  display: flex;
+  color: white;
+}
+
+.temp {
+  width: 37%;
+  font-weight: bold;
+  font-size: 100px;
+  text-align: right;
+  padding: 12px;
+}
+
+.city-date-time {
+  width: auto;
+}
+
+.city {
+  font-weight: bold;
+  padding-top: 46px;
+  font-size: 44px;
+}
+
+.description {
+  width: 25%;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 40px;
+}
+
+.description i {
+  font-size: 26px;
+  padding-bottom: 8px;
+}
+
+.weather-details-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.line {
+  width: 240px;
+  height: 2px;
+  background-color: silver;
+  margin-bottom: 20px;
+}
+
+.weather-details {
+  color: white;
+  padding-left: 30px;
+  line-height: 30px;
+}
+
+.humidity,
+.wind-speed,
+.cloudiness {
+  color: #b9b9b9;
+}
+
+.recent-searches {
+  color: white;
+  margin-top: 20px;
+}
+
+.recent-searches ul {
+  line-height: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.recent-searches li {
+  cursor: pointer;
+  text-decoration: none;
+  color: #b9b9b9;
+  transition: 0.3s ease;
+}
+
+.recent-searches li:hover {
+  color: #978f8f;
+}
+
+.recent-searches p {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 100px;
+}
+
+.forecast-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  margin: 5px;
+  width: 100px;
+  color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.forecast-day:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.forecast-day p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.forecast-day img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.dayOfWeek {
+    font-weight: bold;
+}
